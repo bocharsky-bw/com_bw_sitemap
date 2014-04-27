@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="component" method="upgrade">
+    <name>bw_sitemap</name>
+    <creationDate>27.05.2014</creationDate>
+    <author>Bocharsky Victor</author>
+    <authorEmail>mail@brainforce.kiev.ua</authorEmail>
+    <authorUrl>http://j.brainforce.kiev.ua/</authorUrl>
+    <copyright>bw_sitemap</copyright>
+    <license>bw_sitemap</license>
+    <version>1.0.0</version>
+    <description>bw_sitemap</description>
+
+    <!-- Public front end files -->
+    <files folder="components/com_bw_sitemap">
+        <filename>bw_sitemap.php</filename>
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <folder>views</folder>
+    </files>
+
+    <!-- Administrator back-end section -->
+    <administration>
+        <!-- Back-end files -->
+        <files folder="administrator/components/com_bw_sitemap">
+            <filename>config.xml</filename>
+            <filename>bw_sitemap.php</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <folder>views</folder>
+        </files>
+    </administration>
+</extension>

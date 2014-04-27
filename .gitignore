@@ -1,0 +1,16 @@
+/*
+
+!/.gitignore
+!/bw_sitemap.xml
+!/LICENSE.txt
+!/README.md
+
+!/administrator/
+/administrator/*
+!/administrator/components/
+/administrator/components/*
+!/administrator/components/com_bw_sitemap/
+
+!/components/
+/components/*
+!/components/com_bw_sitemap/
