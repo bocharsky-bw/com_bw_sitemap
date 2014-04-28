@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-    <layout title="Карта сайта" option="COM_BW_SITEMAP_OPTION">
+    <layout title="Карта сайта - Материалы" option="COM_BW_SITEMAP_OPTION">
         <help
                 key = "COM_BW_SITEMAP_KEY"
         />

@@ -22,7 +22,10 @@ class BwSitemapViewDefault extends JViewLegacy
     public function display($tpl = null) {
         $db = JFactory::getDbo();
         
-        $limit = 100;
+        // Get the parameters
+        $params = JComponentHelper::getParams('com_bw_sitemap');
+
+        $limit = $params->get('links_limit', 99);
         $this->posts = $db->setQuery("SELECT "
                     . "* "
                     . "FROM #__content "

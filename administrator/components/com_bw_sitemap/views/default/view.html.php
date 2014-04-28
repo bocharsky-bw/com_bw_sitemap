@@ -13,10 +13,16 @@ defined('_JEXEC') or die;
 
 class BwSitemapViewDefault extends JViewLegacy
 {
+    
+    public $sidebar;
+    
     /**
      * Display the view
      */
     public function display($tpl = null) {
+        BwSitemapHelper::generateToolbar();
+        $this->sidebar = BwSitemapHelper::generateSidebar();
+        
         parent::display($tpl);
     }
 }

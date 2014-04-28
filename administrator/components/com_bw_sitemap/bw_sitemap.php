@@ -12,6 +12,9 @@
 // Protect from unauthorized access
 defined('_JEXEC') or die();
 
+// Регистрация плагина в системе
+JLoader::register('BwSitemapHelper', __DIR__ .'/helpers/bw_sitemap_helper.php');
+
 $controller = JControllerLegacy::getInstance('BwSitemap');
 $controller->execute(JFactory::getApplication()->input->get('task'));
 $controller->redirect();

@@ -11,4 +11,20 @@
  
 defined('_JEXEC') or die;
 ?>
-Default
+<script>
+    // Script for Joomla Core Tooltips
+    jQuery(document).ready(function(){
+        jQuery('.hasTooltip').tooltip({"html": true,"container": "body"});
+    });
+</script>
+<?php if (!empty( $this->sidebar)) : ?>
+    <div id="j-sidebar-container" class="span2">
+        <h3>Меню</h3>
+        <?php echo $this->sidebar; ?>
+    </div>
+<div id="j-main-container" class="span10">
+<?php else : ?>
+<div id="j-main-container">
+<?php endif;?>
+    <h1>Карта сайта</h1>
+</div>
